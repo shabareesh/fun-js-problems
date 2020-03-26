@@ -4,7 +4,16 @@
   "description": "Few javascript problems",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true,
+    "transformIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
   },
   "repository": {
     "type": "git",
@@ -15,5 +24,11 @@
   "bugs": {
     "url": "https://github.com/shabareesh/fun-js-problems/issues"
   },
-  "homepage": "https://github.com/shabareesh/fun-js-problems#readme"
+  "homepage": "https://github.com/shabareesh/fun-js-problems#readme",
+  "devDependencies": {
+    "jest": "^25.1.0"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.9.0"
+  }
 }
