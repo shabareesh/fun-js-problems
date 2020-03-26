@@ -1,12 +1,6 @@
-const isPrime = (n) => {
-    if (n < 2) return false;
-    for (let i = 2; i < n; i++) {
-        if (n % i === 0) return false;
-    }
-    return true;
-};
+import { isPrime } from './isPrime';
 
-const getPrimeNumbers = (n) => {
+export const getPrimeNumbers = (n) => {
     const primeNumbers = [];
 
     for(let i = 2; i <= n; i++) {

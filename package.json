@@ -7,10 +7,6 @@
     "test": "jest"
   },
   "jest": {
-    "verbose": true,
-    "transformIgnorePatterns": [
-      "/node_modules/"
-    ],
     "transform": {
       "^.+\\.js$": "babel-jest"
     }
