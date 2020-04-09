@@ -7,7 +7,3 @@ Array.prototype.customMap = function(callback) {
 
     return mapArr;
 };
-
-const count = [1, 2, 3, 4, 5].customMap(item => item * 2);
-
-console.log('count', count);
